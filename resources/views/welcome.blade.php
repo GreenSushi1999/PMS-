@@ -25,11 +25,9 @@
                         <div class='row justify-content-center mt-2'>
                             <button class="btn btn-danger col-lg-10 btn-lg">Rater</button>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     </div>
