@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PerformanceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main-page.index');
 });
+
+Route::get('/ratee-information', [PerformanceController::class, 'info']);
+Route::post('/ratee-information', [PerformanceController::class, 'infos'])->name('ratee-info');
+
