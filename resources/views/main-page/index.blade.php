@@ -43,7 +43,7 @@
                             evaluation based on facts and actual incidents identified through monitoring and coaching.
                         </p>
                     </div>
-                    <form method="POST" action="{{ route('ratee-info') }}" accept-charset="UTF-8" role="form">
+                    <form method="POST" accept-charset="UTF-8" role="form">
                         @csrf
                         <div class="modal-footer bg-success">
                             <button class="btn bg-white" type="submit">Continue</button>
