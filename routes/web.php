@@ -14,10 +14,5 @@ use App\Http\Controllers\PerformanceController;
 |
 */
 
-Route::get('/', function () {
-    return view('main-page.index');
-});
-
-Route::get('/ratee-information', [PerformanceController::class, 'info']);
-Route::post('/ratee-information', [PerformanceController::class, 'infos'])->name('ratee-info');
-
+Route::get('/', [PerformanceController::class, 'index']);
+Route::post('/ratee-info', [PerformanceController::class, 'ratee_info'])->name('ratee-info');

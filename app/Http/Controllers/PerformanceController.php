@@ -2,16 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\document;
 use Illuminate\Http\Request;
 
 class PerformanceController extends Controller
 {
-    public function info()
+
+    public function index()
     {
-        return view('main-page.info');
+
+        $doc_type = document::get();
+
+        return view('main-page.index', compact('doc_type'));
     }
-    public function infos()
+
+    public function ratee_info(Request $request)
     {
-        return redirect('ratee-information');
+        $data = $request->all();
+        $doc_type = $data['doc_type'];
+
+        return view('main-page.info', compact('doc_type'));
     }
+
+
 }

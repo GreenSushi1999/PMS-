@@ -7,35 +7,32 @@
     <div class="container">
         <div class="row d-flex justify-content-center align-items-center mt-5">
             <div class="col-lg-7 mt-5">
-                <div class="card bg-white  p-3   rounded shadow mt-5">
-                    <div class="form-group">
-                        <label for="">Name:</label>
-                        <input type="text" class="form-control" placeholder= "Last Name,First Name M.I">
-
+                <div class="card bg-white p-3 rounded shadow mt-5">
+                    <div class="card-header bg-success text-white">
+                        {{ $doc_type == 1 ? 'Rank and File Level' : 'Supervisory/Officer Level' }}
                     </div>
-                    <div class="form-group">
-                        <label for="">Position:</label>
-                        <input type="text" class="form-control" placeholder="Position">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for=""> Full Name</label>
+                            <input type="text" class="form-control" placeholder="Last Name, First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for=""> Position</label>
+                            <input type="text" class="form-control" placeholder="Position">
+                        </div>
+                        <div class="form-group">
+                            <label for=""> Unit/Department</label>
+                            <input type="text" class="form-control" placeholder="Unit/Department">
+                        </div>
+                        <div class="form-group">
+                            <label for=""> Employee No.</label>
+                            <input type="text" class="form-control" placeholder="Employee No.">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Period Covered</label>
+                            <input type="text" class="form-control" placeholder="Period Covered">
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <label for="">Department/unit:</label>
-                        <input type="text" class="form-control" placeholder= "Department/Unit">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="">Name:</label>
-                        <input type="text" class="form-control" placeholder= "Last Name,First Name M.I">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="">Name:</label>
-                        <input type="text" class="form-control" placeholder= "Last Name,First Name M.I">
-                        <input type="text" class="form-control" placeholder="Position">
-                    </div>
-
-                    <input type="text" class="form-control" placeholder="Employee No">
-                    <input type="text" class="form-control" placeholder="Period Cover">
                 </div>
             </div>
         </div>

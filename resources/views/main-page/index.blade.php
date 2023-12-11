@@ -29,24 +29,30 @@
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content bg-success">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-white" id="exampleModalLongTitle">Terms and Conditions</h5>
+                <div class="modal-content">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title text-white" id="exampleModalLongTitle">Choose your File</h5>
                         <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true" class="text-white">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
-                        <p class="text-white">
-                            This form shall be accomplished at the end of each evaluation period. This form summarizes the
-                            entire process of performance management and must objectively and honestly reflect the
-                            evaluation based on facts and actual incidents identified through monitoring and coaching.
-                        </p>
-                    </div>
-                    <form method="POST" action="{{ route('ratee-info') }}" accept-charset="UTF-8" role="form">
+
+                    <form action="{{ route('ratee-info') }}" method="POST">
                         @csrf
-                        <div class="modal-footer bg-success">
-                            <button class="btn bg-white" type="submit">Continue</button>
+                        <div class="modal-body">
+                            <p>
+                                Choose your document type:
+                            </p>
+                            <select name="doc_type" id="doc_type" class="select2">
+                                @foreach ($doc_type as $doc)
+                                    <option value="{{ $doc->cid }}">{{ $doc->doc_name }}</option>
+                                @endforeach
+
+                            </select>
+                        </div>
+
+                        <div class="modal-footer ">
+                            <button class="btn btn-success">Continue</button>
                         </div>
                     </form>
                 </div>
@@ -54,6 +60,11 @@
         </div>
 
     </div>
+    <script>
+        $(document).ready(function() {
+            $('#doc_type').select2();
+        });
+    </script>
 
 
 @endsection
