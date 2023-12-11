@@ -22,7 +22,6 @@
                             <button class="btn btn-primary">Rater</button>
                         </div>
                         <div>
-                            {{ $data }}
                         </div>
                     </div>
                 </div>
