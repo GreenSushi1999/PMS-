@@ -21,6 +21,8 @@
                                 m-2">
                             <button class="btn btn-primary">Rater</button>
                         </div>
+                        <div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -36,6 +38,7 @@
                             <span aria-hidden="true" class="text-white">&times;</span>
                         </button>
                     </div>
+<<<<<<< HEAD
 
                     <form action="{{ route('ratee-info') }}" method="POST">
                         @csrf
@@ -55,6 +58,20 @@
                             <button class="btn btn-success">Continue</button>
                         </div>
                     </form>
+=======
+                    <div class="modal-body">
+                        <p class="text-white">
+                            This form shall be accomplished at the end of each evaluation period. This form summarizes the
+                            entire process of performance management and must objectively and honestly reflect the
+                            evaluation based on facts and actual incidents identified through monitoring and coaching.
+                        </p>
+                    </div>
+
+                    <div class="modal-footer bg-success">
+                        <button class="btn bg-white">Continue</button>
+                    </div>
+
+>>>>>>> 1cbbd537fe19d81e5c3afe81be18a006508bccf1
                 </div>
             </div>
         </div>

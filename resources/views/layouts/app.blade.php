@@ -1,5 +1,3 @@
-<!-- resources/views/layouts/app.blade.php -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'My Laravel App')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+=======
+
+>>>>>>> 1cbbd537fe19d81e5c3afe81be18a006508bccf1
     <style>
         body {
-            background-image: url('../img/mtc_bg.jpg');
-            background-size: cover;
+            background-image: url('{{ asset('img/mtc_bg.jpg') }}');
+            background-size: contain;
         }
     </style>
 </head>
@@ -33,8 +35,9 @@
         <!-- Footer content -->
     </footer>
 
-    <!-- Add your Bootstrap JavaScript link here if needed -->
+    <!-- Bootstrap JavaScript (including Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -52,6 +55,11 @@
 
 
 
+=======
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI/tZ1Xaib5lG8rZbRlDcfs3tkjlM6I9maXl5vFA=" crossorigin="anonymous"></script>
+>>>>>>> 1cbbd537fe19d81e5c3afe81be18a006508bccf1
 </body>
 
 </html>
