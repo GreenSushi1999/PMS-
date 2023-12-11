@@ -49,8 +49,31 @@
                             @foreach ($doc_type as $doc)
                                 <option value="{{ $doc->cid }}">{{ $doc->doc_name }}</option>
                             @endforeach
-
                         </select>
+                        <div class="row">
+                            <div class="form-group col-lg-6">
+                                <label for="">Full Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label for="">Employee No.</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6">
+                                <label for="">Position</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label for="">Period Covered</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <label for="">Unit/Department</label>
+                        <input type="text" class="form-control">
+
                     </div>
 
                     <div class="modal-footer ">
