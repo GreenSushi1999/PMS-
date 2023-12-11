@@ -21,6 +21,9 @@
                                 m-2">
                             <button class="btn btn-primary">Rater</button>
                         </div>
+                        <div>
+                            {{ $data }}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -43,12 +46,11 @@
                             evaluation based on facts and actual incidents identified through monitoring and coaching.
                         </p>
                     </div>
-                    <form method="POST" accept-charset="UTF-8" role="form">
-                        @csrf
-                        <div class="modal-footer bg-success">
-                            <button class="btn bg-white" type="submit">Continue</button>
-                        </div>
-                    </form>
+
+                    <div class="modal-footer bg-success">
+                        <button class="btn bg-white">Continue</button>
+                    </div>
+
                 </div>
             </div>
         </div>

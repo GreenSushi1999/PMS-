@@ -1,5 +1,3 @@
-<!-- resources/views/layouts/app.blade.php -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'My Laravel App')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <style>
         body {
-            background-image: url('../img/mtc_bg.jpg');
+            background-image: url('{{ asset('img/mtc_bg.jpg') }}');
             background-size: contain;
         }
     </style>
@@ -31,8 +28,11 @@
         <!-- Footer content -->
     </footer>
 
-    <!-- Add your Bootstrap JavaScript link here if needed -->
+    <!-- Bootstrap JavaScript (including Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI/tZ1Xaib5lG8rZbRlDcfs3tkjlM6I9maXl5vFA=" crossorigin="anonymous"></script>
 </body>
 
 </html>
