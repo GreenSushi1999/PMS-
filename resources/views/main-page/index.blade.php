@@ -33,7 +33,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-success">
-                    <h5 class="modal-title text-white" id="exampleModalLongTitle">Choose your File</h5>
+                    <h5 class="modal-title text-white" id="exampleModalLongTitle">Choose your Document</h5>
                     <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" class="text-white">&times;</span>
                     </button>
@@ -44,7 +44,8 @@
                         <p>
                             Choose your document type:
                         </p>
-                        <select name="doc_type" id="doc_type" class="select2">
+                        <select name="doc_type" id="doc_type" class="select2 form-control">
+                            <option value="0" selected disabled>Select</option>
                             @foreach ($doc_type as $doc)
                                 <option value="{{ $doc->cid }}">{{ $doc->doc_name }}</option>
                             @endforeach

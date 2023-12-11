@@ -16,3 +16,5 @@ use App\Http\Controllers\PerformanceController;
 
 Route::get('/', [PerformanceController::class, 'index']);
 Route::post('/ratee-info', [PerformanceController::class, 'ratee_info'])->name('ratee-info');
+Route::post('/save-info', [PerformanceController::class, 'save_info'])->name('save-info');
+Route::get('/instructions', [PerformanceController::class, 'instructions'])->name('instructions');
